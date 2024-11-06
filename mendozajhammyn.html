@@ -1,0 +1,184 @@
+<!-- gawa ka folder sa desktop sa comlab, name nyon QUIZ, then gawa ka folder na images lagay ka 5 pictures, then gawa ka mendozajhammyn.html, don lahat ng content, walang other files, ALSO: BAWAL MAG PASTE NG CODE  -->
+
+<!-- type ka ng ! tapos enter -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mendoza</title>
+
+    <!-- dito mo lalagay css, sa style, WARN: sulatin mo muna yung sa body bago yung style, mas mahalaga kasi yung body eh -->
+    <style>
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(to right, lightblue, fuchsia);
+        margin: 20px;
+      }
+
+      li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        border: transparent solid 2px;
+        box-shadow: 6px 9px 9px rgba(0, 0, 0, 0.2);
+      }
+
+      main {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 6px 9px 9px rgba(0, 0, 0, 0.2);
+        color: white;
+        margin-bottom: 15px;
+      }
+
+      li:hover {
+        border-color: white;
+      }
+
+      ul {
+        padding: 0px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      carousel-uwu {
+        overflow-x: scroll;
+        background-color: black;
+        border-radius: 5px;
+        display: flex;
+      }
+
+      carousel-uwu img {
+        max-width: 500px;
+        height: max-content;
+      }
+
+      table {
+        border: solid white 2px;
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      th {
+        background-color: black;
+        padding: 5px;
+        border: solid 2px transparent;
+      }
+
+      td {
+        border: 2px solid black;
+        padding: 5px;
+      }
+
+      th:hover,
+      td:hover {
+        border-color: white;
+      }
+
+      main img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <!-- dito sa loob ng body lahat ng laman na nasa page, eto muna unahin mo bago style -->
+  <body>
+    <!-- type nav>ul>li*5>a then enter -->
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Carousel">Carousel</a></li>
+        <li><a href="#Table">Table</a></li>
+        <li><a href="#Gallery">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 id="About">About Jhammyn!</h1>
+      <!-- palitan mo nalang naka sulat dito or type lorem35 tapos enter -->
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam autem
+        culpa dicta illo quisquam! Iure dolorem explicabo corrupti, ullam neque
+        et a debitis temporibus dignissimos qui. Voluptates delectus
+        necessitatibus modi explicabo neque quasi, quis aliquid?
+      </p>
+    </main>
+
+    <main>
+      <h1 id="Table">Table</h1>
+      <!-- type table>tr>th*3 -->
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Fav Color</th>
+        </tr>
+        <!-- type tr>td*3 -->
+
+        <tr>
+          <td>Bla bla</td>
+          <td>bla bla</td>
+          <td>bla bla</td>
+        </tr>
+
+        <tr>
+          <td>Bla bla</td>
+          <td>bla bla</td>
+          <td>bla bla</td>
+        </tr>
+
+        <tr>
+          <td>Bla bla</td>
+          <td>bla bla</td>
+          <td>bla bla</td>
+        </tr>
+
+        <tr>
+          <td>Bla bla</td>
+          <td>bla bla</td>
+          <td>bla bla</td>
+        </tr>
+
+        <tr>
+          <td>Bla bla</td>
+          <td>bla bla</td>
+          <td>bla bla</td>
+        </tr>
+      </table>
+    </main>
+    <main>
+      <h1 id="Gallery">Gallery</h1>
+      <!-- palitan mo images dito -->
+      <img src="images/Informal Logo (2).png" alt="" />
+      <img src="images/Informal Logo (2).png" alt="" />
+    </main>
+    <main>
+      <h1 id="Carousel">Carousel</h1>
+      <!-- ibang image dapat ilalagay dito, make sure name sizes -->
+      <carousel-uwu
+        ><img src="images/Informal Logo (2).png" alt="" /><img
+          src="images/Informal Logo (2).png"
+          alt=""
+        /><img src="images/Informal Logo (2).png" alt="" /><img
+          src="images/Informal Logo (2).png"
+          alt=""
+        />
+      </carousel-uwu>
+    </main>
+  </body>
+</html>
